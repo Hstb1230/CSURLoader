@@ -34,7 +34,7 @@ namespace CSURLoader
         private static string LocalePath(string lang)
         {
             var modPath = PluginManager.instance.FindPluginInfo(Assembly.GetExecutingAssembly()).modPath;
-            return Path.Combine(modPath, $"Resources/{lang}.txt");
+            return Path.Combine(modPath, $"Translations/{lang}.txt");
         }
 
         public static string Get(string id)
